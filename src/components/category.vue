@@ -5,7 +5,7 @@
     
 
 <b-list-group  >
-            <b-list-group-item href="#" variant="light" style=" font-size:18px;" >
+            <b-list-group-item href="#" variant="light" style=" font-size:15px;" >
                 {{category.name}}
                 </b-list-group-item> 
 </b-list-group>

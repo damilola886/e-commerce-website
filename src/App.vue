@@ -1,10 +1,11 @@
 <template>
   <div id="app">
      <navbar/>
+     
       <div class="flex">
             <b-container class="bv-example-row" fluid>
                 <b-row>
-                <b-col cols="4">
+                <b-col cols>
                   <div class="sticky">
                     <p class="cat">Categories</p>
                   <category v-for="element in sections" :category="element" :key="element.id"/>
@@ -12,12 +13,21 @@
                   </div>
                   
                   </b-col>
-                <b-col cols="8">
-                  <p class="prod">Products</p>
-                  <product v-for="item in products" :product="item" :key="item.id" />
+                <b-col cols="5">
+                  <carousel/>
+                  </b-col>
+                  
+                  <b-col cols="3">
+                    <div class="space">
+                      <p class="prod">Achieve your skin & health goals</p>
+                         <advert/>
+                    </div>
+                    
                   </b-col>
                 </b-row>
             </b-container>
+            <p class="prod">Our Products</p>
+            <product v-for="item in products" :product="item" :key="item.id" />
     
       </div>
      
@@ -29,7 +39,9 @@
 <script>
   import product from './components/product.vue'
   import navbar from './components/navbar.vue'
-   import category from './components/category.vue'
+  import category from './components/category.vue'
+  import carousel from './components/Carousel.vue'
+  import advert from './components/advert.vue'
 
 export default {
   name: 'App',
@@ -182,7 +194,9 @@ export default {
   components: {
    product,
    navbar,
-   category
+   category,
+   carousel,
+   advert
 
   }
 }
@@ -210,6 +224,10 @@ export default {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+.space{
+  padding-left:0;
+  margin-left: 0;
 }
 
 </style>

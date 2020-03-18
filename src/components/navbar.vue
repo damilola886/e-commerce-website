@@ -15,13 +15,13 @@
       <b-navbar-nav class="ml-auto">
         <b-nav-form>
           <b-form-input size="sm" class="mr-sm-2" placeholder="Search" style="width:350px; border-radius:10px; height:30px"></b-form-input>
-          <b-button size="sm" class="my-2 my-sm-4" type="submit">Search</b-button>
+          <b-button size="sm" class="my-2 my-sm-4" type="submit" variant="warning">Search</b-button>
         </b-nav-form>
 
         <b-nav-item-dropdown right>
           <!-- Using 'button-content' slot -->
           <template v-slot:button-content>
-            <em style="color:white;  font-style:normal;">User</em>
+            <em style="color:yellow;  font-style:normal;">User</em>
           </template>
           <b-dropdown-item href="#">Profile</b-dropdown-item>
           <b-dropdown-item href="#">Sign Out</b-dropdown-item>

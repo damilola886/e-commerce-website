@@ -25,7 +25,7 @@
                 </b-card-text>
 
                     <p > &#8358; {{product.price}}</p>
-               <b-button block variant="dark">Buy Now</b-button>
+               <b-button block variant="warning">Buy Now</b-button>
   </b-card>
  
 
@@ -49,7 +49,7 @@ export default {
     display: inline-block;
     margin-left: 10px ;
     margin-right: 10px;
-    margin-top: 3px;
+    width: 300px
 }
 p{
     color:#000000;
