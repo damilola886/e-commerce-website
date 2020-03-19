@@ -2,7 +2,7 @@
   <div id="app">
      <navbar/>
      
-      <div class="flex">
+      
             <b-container class="bv-example-row" fluid>
                 <b-row>
                 <b-col cols>
@@ -28,8 +28,10 @@
             </b-container>
             <p class="prod">Our Products</p>
             <product v-for="item in products" :product="item" :key="item.id" />
+            <Footer/>
+
     
-      </div>
+     
      
     <!-- <profile v-for="person in fellows" :user="person" :key="person.id"/>  --> 
    
@@ -42,6 +44,8 @@
   import category from './components/category.vue'
   import carousel from './components/Carousel.vue'
   import advert from './components/advert.vue'
+  import Footer from './components/Footer.vue'
+
 
 export default {
   name: 'App',
@@ -152,7 +156,14 @@ export default {
         price: "2,125",
         image:require("./assets/mist.jpg"),
         category_id: 2
-      }
+      },
+       {
+         id: 16,
+        name: "Body Scrub",
+        price: "9,250",
+        image:require("./assets/scrub.jpg"),
+        category_id: 3
+      },
       	
       
       ],
@@ -196,7 +207,8 @@ export default {
    navbar,
    category,
    carousel,
-   advert
+   advert,
+   Footer
 
   }
 }

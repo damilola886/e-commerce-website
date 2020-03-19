@@ -21,7 +21,7 @@
         <b-nav-item-dropdown right>
           <!-- Using 'button-content' slot -->
           <template v-slot:button-content>
-            <em style="color:yellow;  font-style:normal;">User</em>
+            <em style="color: #ffbf00; font-style:normal;">User</em>
           </template>
           <b-dropdown-item href="#">Profile</b-dropdown-item>
           <b-dropdown-item href="#">Sign Out</b-dropdown-item>

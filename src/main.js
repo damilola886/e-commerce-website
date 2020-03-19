@@ -8,6 +8,28 @@ Vue.use(BootstrapVue);
 Vue.use(VueCarousel);
 
 
+//  font aweseome library after installing all the npm plugin 
+// from https://medium.com/front-end-weekly/how-to-use-fon-awesome-5-on-vuejs-project-ff0f28310821
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+// to use all the free default icons that arent brand names like facebook
+import { fas } from '@fortawesome/free-solid-svg-icons'
+library.add(fas)
+
+
+
+//to be able to use <i></i>
+import { dom } from '@fortawesome/fontawesome-svg-core'
+dom.watch()
+
+// to use all the brands font awesome icons on my Page
+import { faFacebook,faTwitter,faGoogle,faInstagram,faLinkedin,faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
+library.add(faFacebook,faTwitter,faGoogle,faInstagram,faLinkedin,faYoutubeSquare)
+
+
+
 Vue.config.productionTip = false
 
 new Vue({
