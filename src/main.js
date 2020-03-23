@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
+import { store } from './store/store'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { BootstrapVue} from 'bootstrap-vue'
@@ -20,7 +22,7 @@ library.add(fas)
 
 
 
-//to be able to use <i></i>
+//to be able to use <i></i> font awesome tags in html
 import { dom } from '@fortawesome/fontawesome-svg-core'
 dom.watch()
 
@@ -33,5 +35,7 @@ library.add(faFacebook,faTwitter,faGoogle,faInstagram,faLinkedin,faYoutubeSquare
 Vue.config.productionTip = false
 
 new Vue({
+  router,
+  store,
   render: h => h(App),
 }).$mount('#app')

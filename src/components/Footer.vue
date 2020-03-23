@@ -1,4 +1,5 @@
 <template>
+<!-- check the main.js for complete steps on how you used font awesome here  -->
 <div class="footer">
     <mdb-footer color="stylish-color-dark" class="font-small pt-4 mt-4">
     <mdb-container class="text-center text-md-left">
@@ -6,7 +7,7 @@
         <mdb-col md="3" lg="3" xl="3" class="mx-auto mt-3">
           <h6 class="text-uppercase mb-3 font-weight-bold " style="color: #ffbf00" >Skin, Health and Body Shop</h6>
            <hr />
-          <p class="left">  Because we value our customers "you" so much, we have decided to provide free shipping to all our orders above &#8358; 400,000, so keep shopping. We've got you and don't forget to love yoyr skin and body the way we love you @Skin, Health and Body Shop. </p>
+          <p class="left">  Because we value our customers "you" so much, we have decided to provide free shipping to all our orders above &#8358; 400,000, so keep shopping. We've got you and don't forget to love your skin and body the way we love you @Skin, Health and Body Shop. </p>
         </mdb-col>
         <hr class="w-100 clearfix d-md-none" />
         <mdb-col md="2" lg="2" xl="2" class="mx-auto mt-3">

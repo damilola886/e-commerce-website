@@ -1,6 +1,6 @@
 <template>
 <div class="slide">
-    <carousel :per-page="1" :navigate-to="someLocalProperty" :autoplay="true" :animation="fadeIn" :speed="3000" :loop="true">
+    <carousel :per-page="1" :autoplay="true"  :speed="3000" :loop="true">
     <slide v-for="image in images" :key="image.id">
       
     
