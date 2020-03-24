@@ -6,31 +6,34 @@
        <b-container class="bv-example-row" fluid>
                 <b-row>
                 <b-col cols>
-                  <div class="sticky">
-                    <p class="cat">Categories</p>
-                  <div class="big-image">
-                    <img :src="product.image" alt="" width=350 heigth=250>
+                  
+                  <div class="big-image"  style="margin-top:50px">
+                    <img :src="product.image" alt="" width=350 height=300>
                     <div class="smallerimages" style="margin-top:50px">
-                        <img :src="product.image" alt="" width=100 height=100>
-                        <img :src="product.image" alt="" width=100 height=100>
-                        <img :src="product.image" alt="" width=100 height=100>
-                    </div>
+                      
+                        <img :src="product.images[0]" alt="" width=100 height=100 @click="changeimage1" class="small">
+                        <img :src="product.images[1]" alt="" width=100 height=100 @click="changeimage2" class="small">
+                        <img :src="product.images[2]" alt="" width=100 height=100 @click="changeimage3" class="small">
+                         
+                    
                 </div>
 
 
                   </div>
                   
                   </b-col>
-                <b-col cols="8" style="margin-top:100px; height:500px">
+                <b-col cols="8" style="margin-top:50px; height:500px">
                    <div class="Details">
-                    <b-card bg-variant="dark" text-variant="white" :title=" product.name ">
-                        
+                    <b-card bg-variant="dark" text-variant="white" >
+
+                        <h3>{{product.name}}</h3>
                         <div class="full">
-                       <h5>Description</h5>
-                           <p>{{product.information}}</p> 
-                           <p>&#8358;{{ product.price }}</p>
+                       <h4>Product Description</h4>
+                       <hr style="color:white">
+                           <p class="paragraph">{{product.information}}</p> 
+                           <p class="price">&#8358;{{ product.price }}</p>
                           </div>
-                        <b-button block variant="warning" style="margin-top:50px; font-size:20px; font-weight:bold">Buy </b-button>
+                        <b-button block variant="warning" style="margin-top:30px; font-size:20px; font-weight:bold">BUY </b-button>
                         
                     </b-card>
 
@@ -59,15 +62,23 @@ export default {
      name: 'Description',
     props: ['product'],
     data(){
-        return{
-      
-        
-    
-             
+        return{          
 
         }
 
     },
+    methods:{
+        changeimage1:function(){
+                this.product.image = this.product.images[0]          
+        },
+         changeimage2:function(){
+                this.product.image = this.product.images[1]          
+        },
+         changeimage3:function(){
+                this.product.image = this.product.images[2]          
+        }
+    },
+ 
 
     components:{
         navbar,
@@ -82,11 +93,34 @@ export default {
 };
 .Details{
     width:500px;
-    margin-top: 500px;
-}
-p{
-    text-align: center;
-    font-size: 18px;
+    margin-top: 300px;
 }
 
+.small{
+     margin-right: 5px;
+     border: 1px solid #000;
+}
+.small:hover{
+    border: 3px solid orange;
+    cursor: pointer;
+
+   
+}
+.price{
+ text-align: center;
+ font-size: 20px;
+ font-weight: bold;
+}
+.paragraph{
+    margin-top: 20px;
+ font-size: 20px;
+}
+h4{
+    color:#FFBF00
+}
+h3{
+ text-align: center;
+ text-transform:uppercase;
+ color:#FFBF00
+}
 </style>
