@@ -282,7 +282,6 @@ data(){
                 let Data = this.products.filter((item) => {
                 return item.id === id
             });
-            console.log(Data[0])
             let descriptionitem = {
                 name: 'Description',
                 params: {

@@ -1,7 +1,7 @@
 <template>
 <!-- check the main.js for complete steps on how you used font awesome here  -->
-<div class="footer">
-    <mdb-footer color="stylish-color-dark" class="font-small pt-4 mt-4">
+<div class="footer" style="margin-top:0">
+    <mdb-footer color="stylish-color-dark" class="font-small pt-0 mt-0">
     <mdb-container class="text-center text-md-left">
       <mdb-row class="text-center text-md-left mt-3 pb-3">
         <mdb-col md="3" lg="3" xl="3" class="mx-auto mt-3">

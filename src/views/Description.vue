@@ -4,12 +4,12 @@
 
    <div class="display">
        <b-container class="bv-example-row" fluid>
-                <b-row>
-                <b-col cols>
+                <b-row style="height:470px">
+                <b-col cols >
                   
-                  <div class="big-image"  style="margin-top:50px">
+                  <div class="big-image"  style="margin-top:50px;">
                     <img :src="product.image" alt="" width=350 height=300>
-                    <div class="smallerimages" style="margin-top:50px">
+                    <div class="smallerimages" style="margin-top:10px">
                       
                         <img :src="product.images[0]" alt="" width=100 height=100 @click="changeimage1" class="small">
                         <img :src="product.images[1]" alt="" width=100 height=100 @click="changeimage2" class="small">
@@ -45,7 +45,7 @@
                
             </div>
             
-            
+            <Footer/>
       </div>
 
    
@@ -56,7 +56,7 @@
 
 <script>
  import navbar from '../components/navbar.vue';
-
+ import Footer from '../components/Footer.vue';
  
 export default {
      name: 'Description',
@@ -82,6 +82,7 @@ export default {
 
     components:{
         navbar,
+        Footer
      
     }
     
@@ -89,7 +90,7 @@ export default {
 </script>
 <style scoped>
 .description{
-    margin-top: 100px;
+    margin-top: 70px;
 };
 .Details{
     width:500px;
@@ -123,4 +124,5 @@ h3{
  text-transform:uppercase;
  color:#FFBF00
 }
+
 </style>
