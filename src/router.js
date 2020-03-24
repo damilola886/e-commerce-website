@@ -18,10 +18,10 @@ const myRoutes = [
         component: Home
     },
     {
-        path: "/description/:product",
+        path: "/description",
         name: "Description",
         component: Description,
-        props: true,
+       
     }
 
 ];

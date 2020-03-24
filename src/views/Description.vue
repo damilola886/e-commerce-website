@@ -44,8 +44,10 @@
                 
                
             </div>
+            <!-- <div class="footer">
+                <Footer/>
+                </div> -->
             
-            <Footer/>
       </div>
 
    
@@ -60,12 +62,17 @@
  
 export default {
      name: 'Description',
-    props: ['product'],
+    // props: ['product'],
     data(){
         return{          
 
         }
 
+    },
+    computed: {
+        product(){
+            return this.$store.state.showProduct;
+        },
     },
     methods:{
         changeimage1:function(){
@@ -89,6 +96,8 @@ export default {
 }
 </script>
 <style scoped>
+
+
 .description{
     margin-top: 70px;
 };
@@ -124,5 +133,14 @@ h3{
  text-transform:uppercase;
  color:#FFBF00
 }
+/* @media all and (max-width: 500px){
+.footer{
+    margin-top: 100px;
+};
+.bigimage{
+    height:100px
+}
+} */
+
 
 </style>
