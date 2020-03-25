@@ -217,7 +217,7 @@ h3{
 
    
     border: 1px solid #a9a9a9;
-    width: 60%;
+    width: 65%;
     height: 500px;
     margin-left: 30px;
      margin-top: 98px;
@@ -234,7 +234,7 @@ h3{
 
 }
 .refunds{
-    width: 30%;
+    width: 32%;
     display: block;
     margin-left: 20px;
     margin-right: 10px;
