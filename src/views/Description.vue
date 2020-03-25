@@ -287,7 +287,7 @@ text-transform: capitalize;
       display: flex;
     flex-direction: column;
  }
- @media only screen and (min-width: 600px) {
+ @media only screen and (orientation: landscape) {
     .big {
         display: flex;
         flex-direction: row;
