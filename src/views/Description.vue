@@ -4,7 +4,7 @@
     <div class="description">
         <div class="display">
        
-                  <div class="big" style="display:flex; width:100%">
+                  <div class="big" >
                     <div class="big-image" >
                     <img :src="product.image" alt="" width=350 height=300>
                     <div class="smallerimages" style="margin-top:10px">
@@ -17,7 +17,7 @@
                 </div>
                 
                   </div>
-                <div class="full" style="width:57%; margin-right:10px;">
+                <div class="full" style="width:500px; margin-right:10px;">
                 <h3>{{product.name}}</h3>
                 <div style="margin-left:190px">
                 <i class="fas fa-star"></i>
@@ -172,15 +172,19 @@ export default {
 }
 </script>
 <style scoped>
+*{
+    margin: auto 0;
+}
 .roots{
   background-color:#f7f7f7;
-    height: 2000px;
+   width:1500px
 }
 
 .description{
   
     display: flex;
-    width: 100%;
+    width:1500px
+    
     
 };
 .Details{
@@ -220,7 +224,7 @@ h3{
 
    
     border: 1px solid #a9a9a9;
-    width: 65%;
+    width: 900px;
     height: 500px;
     margin-left: 30px;
      margin-top: 98px;
@@ -230,15 +234,14 @@ h3{
 }
 .big-image{
      margin-top:50px; 
-     width:40%; 
-     display:inline-block; 
+     width:500px; 
      margin-left:15px;
      margin-right: 15px;
 
 }
 .refunds{
-    width: 32%;
-    display: block;
+    width: 450px;
+  
     margin-left: 20px;
     margin-right: 10px;
     margin-top: 100px;
@@ -263,15 +266,15 @@ text-transform: capitalize;
 }
 .house{
     display: flex;
-    width:100%;
+    width:500px;
 
 }
 .leftIcon{
-    width:20%;
+    width:100px;
   
 }
 .right{
-    width:78%
+    width:320px
 }
 .underRefunds{
     margin-top:20px
@@ -279,15 +282,18 @@ text-transform: capitalize;
 .fa-star{
     color:#ffbf00;
     text-align: center;
+ } 
+ .big{
+      display: flex;
+    flex-direction: column;
+ }
+ @media only screen and (min-width: 600px) {
+    .big {
+        display: flex;
+        flex-direction: row;
+    } 
 }
-/* @media all and (max-width: 500px){
-.footer{
-    margin-top: 100px;
-};
-.bigimage{
-    height:100px
-}
-} */
+
 
 
 </style>
