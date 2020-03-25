@@ -35,7 +35,7 @@
                                <!-- <star-rating v-model="rating"></star-rating> -->
                             
                            <p class="price">&#8358;{{ product.price }}</p>
-                        
+                        <del style="margin-left:210px;color:grey; font-size:22px" >&#8358;{{ product.slashedprice }}</del>
                         <b-button block variant="warning" style="margin-top:30px; font-size:20px; font-weight:bold; color:white"><i class="fas fa-shopping-cart"></i>Add to Cart </b-button>
                     </div>
                     </div>
