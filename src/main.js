@@ -29,6 +29,8 @@ dom.watch()
 // to use all the brands font awesome icons on my Page
 import { faFacebook,faTwitter,faGoogle,faInstagram,faLinkedin,faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
 library.add(faFacebook,faTwitter,faGoogle,faInstagram,faLinkedin,faYoutubeSquare)
+// import StarRating from 'vue-star-rating'
+// Vue.component('star-rating', StarRating);
 
 
 
