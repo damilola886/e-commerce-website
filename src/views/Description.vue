@@ -4,8 +4,8 @@
     <div class="description">
         <div class="display">
        
-                  
-                  <div class="big-image" >
+                  <div class="big" style="display:flex; width:100%">
+                    <div class="big-image" >
                     <img :src="product.image" alt="" width=350 height=300>
                     <div class="smallerimages" style="margin-top:10px">
                       
@@ -17,7 +17,7 @@
                 </div>
                 
                   </div>
-                    <div class="full" style="width:500px; display:inline-block;">
+                <div class="full" style="width:57%; margin-right:10px;">
                 <h3>{{product.name}}</h3>
                 <div style="margin-left:190px">
                 <i class="fas fa-star"></i>
@@ -40,6 +40,9 @@
                     </div>
                     </div>
                  
+                  </div>
+                  
+                
 
                     <div class="refunds">
                                 <b-list-group>
@@ -227,7 +230,7 @@ h3{
 }
 .big-image{
      margin-top:50px; 
-     width:350px; 
+     width:40%; 
      display:inline-block; 
      margin-left:15px;
      margin-right: 15px;
