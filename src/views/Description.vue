@@ -46,7 +46,7 @@
                            <p class="price">&#8358;{{ product.price }}</p>
                         <del>&#8358;{{ product.slashedprice }}</del>
                         <div class="button" style="margin-bottom:10px">
-                        <b-button block variant="warning" style="margin-top:20px; font-size:18px; font-weight:bold; color:white;height:50px"><i class="fas fa-shopping-cart"></i>Add to Cart </b-button>
+                        <b-button block variant="warning" style="margin-top:20px; font-size:18px; font-weight:bold; color:white;height:51px"><i class="fas fa-shopping-cart"></i>Add to Cart </b-button>
                         </div>
                          <hr>
                          <div>
